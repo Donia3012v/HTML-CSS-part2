@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.btn{
+    font-size: 15px;
+    font-weight: bold;
+    background: rgb(163, 196, 228);
+    color: black;
+    width: 250px;
+    height: 26px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 7px;
+    text-decoration: none;
+    border-radius: 25px;
+    border-color: rgb(62, 62, 205);
+
+
+}
+
+.btn:hover{
+    background-color: rgb(237, 183, 199);
+    box-shadow: 0 0 20px rgb(163, 196, 228);
+}

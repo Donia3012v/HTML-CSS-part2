@@ -1,0 +1,17 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+input:invalid{
+    border-color: rgb(209, 31, 31);
+    border-width: 3px;
+}
+input:valid + p{
+    visibility: hidden;
+}
+input:valid{
+    border-color: rgb(46, 164, 68);
+    border-width: 3px;
+}
+.btn:valid + input:{
+    clear: both;
+}

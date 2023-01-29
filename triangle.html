@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> triangle and sqrt</title>
+        <script>
+            window.MathJax = {
+              MathML: { extensions: ["mml3.js", "content-mathml.js"] },
+            };
+          </script>
+          <script
+            type="text/javascript"
+            async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"
+          ></script>
+    </head>
+    <body>
+        <canvas width="600" height="500" id="can">
+            
+        </canvas>
+        <h2>according to pythagrors theorem</h2>
+        <math style="color: red;">
+            <mrow>
+              <mi>c</mi>
+              <mo>=</mo>
+              <msqrt>
+                <msup>
+                    <mi>a</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                    <mi>b</mi>
+                    <mn>2</mn>
+                </msup>
+              </msqrt>
+            </mrow>
+          </math>
+        <script>
+            var can = document.getElementById("can");
+            var ctx = can.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(200, 300);
+            ctx.lineTo(300, 10);
+            ctx.lineTo(300,300);
+            ctx.lineTo(200,300);
+            ctx.fillStyle = "red";
+            ctx.fill();
+
+            ctx.font= "30px monospac";
+            ctx.fillStyle ="black";
+            ctx.textAlign = "center";
+            ctx.fillText("c",200,200);
+            ctx.fillText("b",330,200);
+            ctx.fillText("a",250,330);
+
+            ctx.closePath();
+
+        </script>
+    </body>
+</html>
